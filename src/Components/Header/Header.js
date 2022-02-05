@@ -26,7 +26,7 @@ import "./Header.css";
 const Header = () => {
   document.title = "Facebook";
   return (
-    <div className="sticky top-0 z-50 bg:white flex items-center p-2 lg:px-5 shadow-md">
+    <div className="sticky top-0 z-50 bg-white flex items-center p-2 lg:px-5 shadow-md">
       {/* left */}
       <div className="flex items-center">
         <img
@@ -59,7 +59,13 @@ const Header = () => {
       <div className="flex items-center sm:space-2 justify-end">
         <img />
         {/* profile pic */}
-
+        <img
+          className="rounded-full mr-2 cursor-pointer"
+          src="https://links.papareact.com/5me"
+          width={40}
+          height={40}
+          style={{ layout: "fixed" }}
+        ></img>
         <p className="whitespace-nowrap font-semibold pr-3">Saheel Jagruti</p>
         <ViewGridAddIcon className="icon" />
         <ChatIcon className="icon" />
